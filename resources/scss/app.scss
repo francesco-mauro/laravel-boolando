@@ -1,1 +1,9 @@
+@use "./partials/header" as *;
+
+@use "./partials/card" as *;
+
 @import "~bootstrap/scss/bootstrap";
+
+.bg-section{
+    background-image: url("../img/fondo-pag-speciali.jpg")
+}
