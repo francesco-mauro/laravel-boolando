@@ -1,5 +1,9 @@
 <header>
-     <ul class="d-flex justify-content-center gap-3">
-        <li><a href="{{ route("home") }}">Booleando</a></li>
-     </ul>
+   <nav>
+      <div>
+         <a href="">
+            <img src="{{ Vite::asset("resources/img/boolean-logo.png") }}" alt="">
+         </a>
+      </div>
+   </nav>
 </header>
