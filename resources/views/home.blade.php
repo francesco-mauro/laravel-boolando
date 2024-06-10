@@ -11,12 +11,12 @@
                             <h4>{{ $product['name'] }}</h4>
                             <p>{{ $product['brand'] }}</p>
                             <p>{{ $product['price'] }}€</p>
+                            @foreach ($product['badges'] as $badge)
+                                <p class="badge text-primary">{{ $badge['value'] }}</p>
+                            @endforeach
                             @if ($product['isInFavorites'])
                                 <p>Preferito</p>
                             @endif
-                            @foreach ($product['badges'] as $badge)
-                                <span class="badge badge-primary">{{ $badge['value'] }}</span>
-                            @endforeach
                         </div>
                     </div>
                 </div>
